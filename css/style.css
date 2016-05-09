@@ -1,0 +1,24 @@
+body {
+	font-size:13px;
+	line-height:24px;
+	color:#000000;
+	font-weight:normal;
+	font-style:"PT Sans", serif;
+}
+
+h2 {
+	font-size:30px;;
+	color:#000000;
+	font-weight:normal;
+	font-style:"Coprum", serif;
+	text-transform:uppercase;
+}
+
+h4 {
+	font-size:30px;
+	line-height:24px;
+	color:#000000;
+	font-weight:normal;
+	font-style:"Coprum", serif;
+	text-transform:uppercase;
+}

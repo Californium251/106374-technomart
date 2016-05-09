@@ -2,13 +2,14 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Техномарт</title>
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container">
-				<div class="first-header">
-					<a class="site-name" href="#">Техномарт</a>
+			<div class="main-header-top">
+				<div class="container">
+					<a class="site-name" href=#">Техномарт</a>
 					<form class="search" method="post">
 						<input class="search-field" type="text" value="Поиск:">
 					</form>
@@ -16,7 +17,7 @@
 					<a class="cart-link" href="#">Корзина</a>
 					<a class="place-order" href="#">Оформить заказ</a>
 				</div>
-				<div class="second-header">
+				<div class="main-header-content container">
 					<p class="site-description">
 						Интернет-магазин
 						строительных материалов
@@ -24,10 +25,14 @@
 					</p>
 					<a class="contact-phone" href=#">+7 (812) 555-05-55</a>
 					<div class="address"> г. Санкт-Петербург, ул. Конюшенная, д.19/8</div>
-					<a class="btn-sign-in">Войти</a>
-					<a class="btn-sign-up">Регистрация</a>
+					<div class="sign-in">
+						<a class="btn-sign-in">Войти</a>
+					</div>
+					<div class="sign-up">
+						<a class="btn-sign-up">Регистрация</a>
+					</div>
 				</div>
-				<nav class="third-header">
+				<nav class="main-nav container">
 					<ul>
 						<li>
 							<a class="menu-btn">Главная</a>
@@ -57,21 +62,17 @@
 		<main>
 			<div class"container">
 				<section class="special-offers">
-					<div class="materials-offer">
+					<div class="offer offer-material label-new">
 						<div class="offer-title">Материалы</div>
-						<div class="offer-label">На любой вкус</div>
-						<div class="new-marker">New</div>
-						<img class="offer-image" src="http://placehold.it/44x65">
+						<a href="#" class="offer-btn">На любой вкус</a>
 					</div>
-					<div class="tools-offer">
+					<div class="offer offer-tool">
 						<div class="offer-title">Инструмент</div>
-						<div class="offer-label">На все случаи</div>
-						<img class="offer-image" src="http://placehold.it/44x65">
+						<a href="#" class="offer-btn">На все случаи</div>
 					</div>
-					<div class="techs-offer">
+					<div class="offer offer-tech">
 						<div class="offer-title">Техника</div>
-						<div class="offer-label">Для стройки</div>
-						<img class="offer-image" src="http://placehold.it/44x65">
+						<a href="#" class="offer-btn">Для стройки</div>
 					</div>
 					<div class="offers-slider">
 						<div class="slider-header">Перфораторы</div>
@@ -84,15 +85,13 @@
 							<input class="switcher" type="checkbox" value="" id="slider-switcher-2">
 						</form>
 					</div>
-					<div class="discount-offer">
+					<div class="offer offer-discount">
 						<div class="offer-title">Скидки 50%</div>
-						<div class="offer-label">На 350 товаров</div>
-						<img class="offer-image" src="http://placehold.it/44x65">
+						<a href="#" class="offer-btn">На 350 товаров</div>
 					</div>
-					<div class="delivery-offer">
+					<div class="offer offer-delivery">
 						<div class="offer-title">Доставка</div>
-						<div class="offer-label">Бесплатно</div>
-						<img class="offer-image" src="http://placehold.it/44x65">
+						<a href="#" class="offer-btn">Бесплатно</div>
 					</div>
 				</section>
 				<section class="popular">
@@ -101,42 +100,81 @@
 						<a class="btn" href="#">Все популярные товары</a>
 					</div>
 					<div class="popular-offers">
-						<a class="popular-item" href="#">
-							<img src="http://placehold.it/218x192">
-							<div class="item-header">
-								Пеhфоратор Bosch<br>
-								BFG 9000
+						<div class="popular-item">
+							<a href="#">
+								<img src="img/bosch_bfg9000.jpg" width=184 height=164 alt="Bosch BFG 9000">
+								<div class="item-header">
+									Пеhфоратор Bosch<br>
+									BFG 9000
+								</div>
+								<div class="old-price">32500 р.</div>
+								<a class="new-price">25500 р.</a>
+							</a>
+							<div class="popular-item-hover">
+								<a href="#" class="buy-btn">
+									Купить
+								</a>
+								<a class="to-bookmarks" href="#">
+									В закладки
+								</a>
+							</div>							
+						</div>
+						<div class="popular-item">
+							<a href="#">
+								<img src="img/bosch_bfg3000.jpg" width=127 height=112 alt="Bosch BFG 3000">
+								<div class="item-header">
+									Пеhфоратор Bosch<br>
+									BFG 3000
+								</div>
+								<div class="old-price">22500 р.</div>
+								<a class="new-price">15500 р.</a>
+							</a>
+							<div class="popular-item-hover">
+								<a href="#" class="buy-btn">
+									Купить
+								</a>
+								<a class="to-bookmarks" href="#">
+									В закладки
+								</a>
+							</div>	
+						</div>
+						<div class="popular-item">
+							<a href="#">
+								<img src="img/bosch_bfg6000.jpg" width=144 height=128 alt="Bosch BFG 6000">
+								<div class="item-header">
+									Пеhфоратор Bosch<br>
+									BFG 6000
+								</div>
+								<div class="old-price">30500 р.</div>
+								<a class="new-price">25500 р.</a>
+							</a>
+							<div class="popular-item-hover">
+								<a href="#" class="buy-btn">
+									Купить
+								</a>
+								<a class="to-bookmarks" href="#">
+									В закладки
+								</a>
 							</div>
-							<div class="old-price">32500 р.</div>
-							<a class="new-price">25500 р.</a>
-						</a>
-						<a class="popular-item" href="#">
-							<img src="http://placehold.it/218x192">
-							<div class="item-header">
-								Пеhфоратор Bosch<br>
-								BFG 3000
-							</div>
-							<div class="old-price">22500 р.</div>
-							<a class="new-price">15500 р.</a>
-						</a>
-						<a class="popular-item" href="#">
-							<img src="http://placehold.it/218x192">
-							<div class="item-header">
-								Пеhфоратор Bosch<br>
-								BFG 6000
-							</div>
-							<div class="old-price">30500 р.</div>
-							<a class="new-price">25500 р.</a>
-						</a>
-						<a class="popular-item" href="#">
-							<img src="http://placehold.it/218x192">
-							<div class="item-header">
-								Пеhфоратор Bosch<br>
-								BFG 2000
-							</div>
-							<div class="old-price"></div>
-							<a class="new-price">12500 р.</a>
-						</a>
+						</div>
+						<div class="popular-item">
+							<a href="#">
+								<img src="img/bosch_bfg2000.jpg" width=127 height=112 alt="Bosch BFG 2000">
+								<div class="item-header">
+									Пеhфоратор Bosch<br>
+									BFG 2000
+								</div>
+								<a class="new-price">12500 р.</a>
+							</a>
+							<div class="popular-item-hover">
+								<a href="#" class="buy-btn">
+									Купить
+								</a>
+								<a class="to-bookmarks" href="#">
+									В закладки
+								</a>
+							</div>	
+						</div>
 					</div>
 				</section>
 				<section class="popular">
@@ -145,36 +183,52 @@
 						<a class="btn" href="#">Все производители</a>
 					</div>
 					<div class="popular-producers">
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
-						<a class="producer-item" href="#">
-							<img src="http://placehold.it/219x143">
-						</a>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_bosch.png" width=126 height=37 alt="Bosch">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_makita.png" width=123 height=40 alt="Makita">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_dewalt.png" width=146 height=44 alt="DeWalt">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_interscol.png" width=200 height=88 alt="Интерскол">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_hitachi.png" width=169 height=31 alt="Hitachi">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_lg.png" width=121 height=73 alt="LG">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_aeg.png" width=151 height=96 alt="AEG">
+							</a>
+						</div>
+						<div class="producer-item">
+							<a href="#">
+								<img src="img/logo_metabo.png" width=204 height=69 alt="metabo">
+							</a>
+						</div>
 					</div>
 				</section>
 			</div>
 			<div class="services">
 				<div class="container">
-					<h4 class="header">
+					<h4 class="title">
 						Сервисы
 					</h4>
 					<p class="services-definition">
@@ -199,6 +253,27 @@
 							к вашему подъезду совершенно бесплатно!
 							Ведь мы неплохо заработаем,<br>
 							поднимая его на ваш этаж!
+						</p>
+					</div>
+					<div class="service-delivery">
+						<h4 class="service-header">Гарантия</h4>
+						<p class="service-description">
+							Если купленный у нас товар поломается или заискрит, 
+							а также в случае пожара, спровоцированного его возгаранием, 
+							вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+							сгоревший товар на новый.<br>
+							Дом уж восстановите как-нибудь сами.
+						</p>
+					</div>
+					<div class="service-delivery">
+						<h4 class="service-header">Доставка</h4>
+						<p class="service-description">
+						Залезть в долговую яму стало проще!<br>
+						Кредитные консультанты придут вам на помощь.
+						</p>
+						<a href="#" class="btn">
+							Отправить заявку
+						</a>
 					</div>
 				</div>
 			</div>
@@ -207,15 +282,15 @@
 					<h2 class="title">
 						Компания "Техномарт"
 					</h2>
-					<p class="information-description">
+					<p>
 						Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
 						строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
 					</p>
-					<p class="information-description">
+					<p>
 						Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 						Техномарт работает со многими транспортными компаниями: 
 					</p>
-					<ul class="transport">
+					<ul>
 						<li>Деловые линии</li>
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
@@ -229,17 +304,23 @@
 					<p class="help-yourself">
 						Вы можете забрать товар сами, заехав в наш офис:
 					</p>
-					<img src="http://placehold.it/300x158">
+					<a href="#" class="pop-up">
+						<img src="img/map.png" width=300 height=158 alt="Map">
+					</a>
 				</div>
 				<a class="btn">Заблудились? Напишите нам!</a>
 			</div>
 		</main>
-		<footer class="first-footer">
+		<footer class="footer-top">
 			<div class="container">
 				<h2 class="footer-site-name">
 					Техномарт
 				</h2>
-				<ul class="footer-menu-1">
+				<div class="address">
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					+7 (812) 555-05-55
+				</div>
+				<ul class="menu-top">
 					<li>
 						<a href="#">Компания</a>
 					</li>
@@ -256,11 +337,7 @@
 						<a href="#">Контакты</a>
 					</li>
 				</ul>
-				<div class="address">
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					+7 (812) 555-05-55
-				</div>
-				<ul class="footer-menu-2">
+				<ul class="menu-bottom">
 					<li>
 						<a href="#">Материалы</a>
 					</li>
@@ -276,7 +353,7 @@
 				</ul>
 			</div>
 		</footer>
-		<footer class="second-footer">
+		<footer class="footer-bottom">
 			<div class="container">
 				<div class="all-rights">
 					© 2010-2016 Компания "Техномарт"<br>
