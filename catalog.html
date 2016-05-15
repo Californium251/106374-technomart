@@ -3,21 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Техномарт</title>
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="main-header-catalog">
 			<div class="main-header-top">
 				<div class="container">
 					<a class="site-name" href=#">Техномарт</a>
 					<form class="search" method="post">
-						<input class="search-field relative-block" type="text" value="Поиск:">
+						<input class="search-field" type="text" value="Поиск:">
 					</form>
-					<a class="bookmarks-link relative-block" href="#">Закладки: 0</a>
-					<a class="cart-link relative-block" href="#">Корзина: 0</a>
-					<a class="place-order " href="#">Оформить заказ</a>
+					<a class="bookmarks-link" href="#">Закладки: </a>
+					<a class="cart-link" href="#">Корзина</a>
+					<a class="place-order" href="#">Оформить заказ</a>
 				</div>
 			</div>
 				<div class="main-header-content container clearfix">
@@ -28,7 +27,7 @@
 					</p>
 					<div class="contacts">
 						<a class="contact-phone" href=#">+7 (812) 555-05-55</a>
-						<div class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+						<div class="address"> г. Санкт-Петербург, ул. Конюшенная, д.19/8</div>
 					</div>
 					<div class="user-block">
 						<div class="user-name">Равшан Джамшутович</div>
@@ -39,48 +38,49 @@
 				<nav class="main-nav container clearfix">
 					<ul>
 						<li>
-							<a class="menu-btn" href="#">Главная</a>
+							<a class="menu-btn">Главная</a>
 						</li>
 						<li>
-							<a class="menu-btn" href="#">Компания</a>
+							<a class="menu-btn">Компания</a>
 						</li>
 						<li>
-							<a class="menu-btn" href="#">Каталог</a>
+							<a class="menu-btn">Каталог</a>
 						</li>
 						<li>
-							<a class="menu-btn" href="#">Новости</a>
+							<a class="menu-btn">Новости</a>
 						</li>
 						<li>
-							<a class="menu-btn" href="#">Спецпредложения</a>
+							<a class="menu-btn">Спецпредложения</a>
 						</li>
 						<li>
-							<a class="menu-btn" href="#">Доставка</a>
+							<a class="menu-btn">Доставка</a>
 						</li>
 						<li>
-							<a class="menu-btn" href="#">Контакты</a>
+							<a class="menu-btn">Контакты</a>
 						</li>
 					</ul>
 				</nav>
+			</div>
 		</header>
 		<main>
-			<div class="container clearfix relative-block">
+			<div class="container clearfix">
 				<ul class="breadcrumbs clearfix">
 					<li>
-						<a href="#" class="main"></a>
+						<a href="#" class="main">Главная</a>
 					</li>
 					<li>
-						<a href="#" class="root">Каталог</a>
+						<a href="#">Каталог</a>
 					</li>
 					<li>
-						<a href="#" class="root">Инструмент</a>
+						<a href="#">Инструмент</a>
 					</li>
 					<li>
-						<a href="#" class="root">Перфораторы</a>
+						<a href="#">Перфораторы</a>
 					</li>
 				</ul>
-				<div class="popular-header title">
-					<span class="title">Перфораторы</span>
-				</div>
+				<h1 class="popular-header">
+					Перфораторы
+				</h1>
 				<form class="filter">
 					<div class="filter-title">
 						Фильтр:
@@ -98,13 +98,13 @@
 						<div class="toggle max-toggle">
 						</div>
 					</div>
-					<div class="price-controls clearfix">
+					<div class="price-controls">
 						<input class="price" type="text" value="0">
-						<span class="dash">–</span>
+						–
 						<input class="price" type="text" value="30000">
 					</div>
 					<div class="filter">
-						<div class="title">Производители:</div>
+						Производители:					
 						<input class="producer-filter" type="checkbox" value="" id="bosch" checked>
 						<label for="bosch">Bosch</label>
 						<input class="producer-filter" type="checkbox" value="" id="interskol">
