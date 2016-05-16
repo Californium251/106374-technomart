@@ -62,7 +62,7 @@ input.search-field {
 	font-size:17px;
 	font-family:"Cuprum", "Arial", san-serif;
 }
-input.search-field:before{
+.search .search-field:before{
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     display: block;
@@ -196,17 +196,21 @@ input.search-field:focus{
 .sign-in:hover, .sign-up:hover{
 	color:#ee3643;
 }
-.sign-in:active, .sign-up:active {
-	color:black;
-	opacity:0.3;
-}
 .user-block {
 	float:right;
 	display:inline-block;
 	padding-top:15px;
-
 }
-
+.user-block a{
+	text-decoration:none;
+	color:black;
+}
+.user-block a:hover{
+	color:#ee3643;
+}
+.user-block a:active{
+	color:rgba(0,0,0,0.5);
+}
 .user-name {
 	display:block;
 	min-height:35px;
@@ -218,6 +222,20 @@ input.search-field:focus{
 	background-color:white;
 	vertical-align:middle;
 	margin-bottom:5px;
+	text-decoration:none;
+	color:black;
+}
+.user-name:hover .sprite-ico-user{
+	background-position: -10px -413px;
+}
+.user-name:hover .sprite-ico-logout{
+	background-position: -10px -225px;
+}
+.user-name:active .sprite-ico-user{
+	background-position: -10px -375px;
+}
+.user-name:active .sprite-ico-logout{
+	background-position: -10px -188px;
 }
 .user-block .account{
 	font-family:"Cuprum", "Arial", san-serif;
@@ -226,6 +244,23 @@ input.search-field:focus{
 	color:#32425c;
 	margin-left:19px;
 	margin-right:9px;
+}
+.user-block .account:hover{
+	color:#ee3643;
+}
+.user-block .account:active{
+	opacity:0.3;
+	color:#32425c;
+}
+.user-name:after{
+	content:'';
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	background-color:#32425c;
+	position:absolute;
+	bottom: -18px;
+	left: 107px;
 }
 
 .breadcrumbs{
@@ -264,16 +299,22 @@ input.search-field:focus{
 }
 .sign-in {
 	text-align:right;
-	padding-right:26px;
+	padding-right:0px;
 	margin-right:10px;
 }
 .btn-sign-in{
-	padding-right: 0px;
+	padding-right: 26px;
 	padding-left: 50px;
 	padding-top:10px;
 	padding-bottom:6px;
 }
 
+.btn-sign-in:hover .sprite-ico-login{
+	background-position: -10px -151px;
+}
+.btn-sign-in:active .sprite-ico-login{
+	background-position: -10px -114px;
+}
 .sign-up {
 	width:150px;
 }
@@ -751,7 +792,7 @@ h2.about-header{
 }
 .services .container{
 	width:1020px;
-	padding-left:40px;
+	padding-left:80px;
 }
 .services-introduction{
 	margin-bottom:66px;
@@ -1278,6 +1319,7 @@ a.apply-filter{
 .pages a.page-number.active, .pages a.page-number.active:hover, .pages a.page-number.active:active{
 	border-color:#ee3643;
 	background-color:#ee3643;
+	color:white;
 }
 a.page-number.next-page{
 	padding-left: 30px;
@@ -1370,84 +1412,120 @@ a.page-number.next-page{
 	margin-top:-223px;
 	box-shadow:0 0 16px 0 rgba(0,0,0,0.5);
 }
+.label-new{
+	position:relative;
+}
+.label-new:before{
+	content:'new';
+	font-family:"PT Sans Narrow", "Arial", san-serif;
+	font-size:16px;
+	position:absolute;
+	top:8px;
+	right:-20px;
+	padding:0 30px;
+	line-height:26px;
+	vertical-align:middle;
+	text-align:cneter;
+	background-color:#ee3643;
+	color:white;
+	transform:rotate(45deg);
+	
+	
+}
+/*==================================================================================================================================*/
+
 .sprite {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     display: block;
 	position:absolute;
-	top:0;
-	left:0;
+}
+
+.sprite-ico-bookmarks {
+    width: 14px;
+    height: 16px;
+    background-position: -10px -10px;
+	opacity:0.3;
+	top: 12px;
+	left: 17px;
 }
 a:hover .sprite{
 	opacity:1;
 }
-
-.sprite-ico-bookmarks {
-	opacity:0.3;
-    width: 14px;
-    height: 16px;
-    background-position: -10px -10px;
-	z-index:10;
-	top:13px;
-	left:18px;
-}
-
 .sprite-ico-cart {
-	opacity:0.3;
     width: 17px;
     height: 16px;
     background-position: -10px -46px;
-	z-index:10;
-	top:13px;
-	left:18px;
+	opacity:0.3;
+	top: 12px;
+	left: 12px;
 }
 
 .sprite-ico-home {
     width: 14px;
     height: 12px;
     background-position: -10px -82px;
+	opacity:0.3;
 }
 
 .sprite-ico-login {
-	opacity:0.3;
     width: 20px;
     height: 17px;
     background-position: -10px -114px;
 	top: 13px;
 	left: 17px;
 }
-.sprite-ico-logoff {
-	opacity:0.3;
+
+.sprite-ico-login-hover {
     width: 20px;
     height: 17px;
-    background-position: -10px -114px;
-	top: 13px;
-	left: 265px;
-
+    background-position: -10px -151px;
 }
+
+.sprite-ico-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -188px;
+	right: 11px;
+	top: 13px;
+}
+
+.sprite-ico-logout-hover {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -225px;
+}
+
 .sprite-ico-phone {
-	opacity:0.3;
     width: 19px;
     height: 19px;
-    background-position: -10px -151px;
-	top: 10px;
-	left: 12px;
+    background-position: -10px -262px;
+	top: 27px;
+	left: 43px;
 }
 
 .sprite-ico-search {
-	opacity:0.3;
     width: 17px;
     height: 17px;
-    background-position: -10px -190px;
-	z-index:10;
-	top:13px;
-	left:14px;
+    background-position: -10px -301px;
+}
+
+.sprite-ico-search-active {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -338px;
 }
 
 .sprite-ico-user {
     width: 20px;
     height: 18px;
-    background-position: -10px -227px;
-	top: 12px;
+    background-position: -10px -375px;
 	left: 13px;
+	top: 13px;
+}
+
+.sprite-ico-user-hover {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -413px;
 }
