@@ -760,7 +760,7 @@ ul.services-menu:after{
 	display:inline-block;
 	font-family:"Cuprum", "Arial", san-serif;
 	font-weight:bold;
-	font-size:21;
+	font-size:21px;
 	line-height:59px;
 	vertical-align:middle;
 	text-decoration:none;
