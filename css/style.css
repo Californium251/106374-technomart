@@ -623,7 +623,7 @@ article.item:hover .popular-item-hover{
 	margin-bottom:42px;
 }
 
-.all-articles article.item:nth-child(3n+1){
+.all-articles article.item:nth-child(3n){
 	margin-right:0px;
 }
 .about-articles{
@@ -1248,9 +1248,19 @@ a.apply-filter{
 	text-transform:uppercase;
 	margin-right:8px;
 }
+.pages a.page-number.active, .pages a.page-number.active:hover, .pages a.page-number.active:active{
+	border-color:#ee3643;
+	background-color:#ee3643;
+}
 a.page-number.next-page{
 	padding-left: 30px;
 	padding-right: 30px;
+}
+.pages a.page-number:hover, a.page-number.next-page:hover{
+	border-color:#bdc6ca;
+}
+.pages a.page-number:active, a.page-number.next-page:active{
+	border-color:#ee3643;
 }
 .write-us{
 	display:none;
@@ -1332,4 +1342,60 @@ a.page-number.next-page{
 	margin-left:-470px;
 	margin-top:-223px;
 	box-shadow:0 0 16px 0 rgba(0,0,0,0.5);
+}
+
+
+============================================================================================================
+
+
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.sprite-ico-bookmarks {
+    width: 14px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-ico-cart {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -46px;
+}
+
+.sprite-ico-home {
+    width: 14px;
+    height: 12px;
+    background-position: -10px -82px;
+}
+
+.sprite-ico-login {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -114px;
+}
+
+.sprite-ico-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -10px -151px;
+}
+
+.sprite-ico-search {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -190px;
+}
+
+.sprite-ico-user {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -227px;
 }
