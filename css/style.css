@@ -31,7 +31,7 @@ a.site-name {
 	background-color:#ee3643;
 	border-bottom:5px solid #b52933;
 	font-size:24px;
-	color:white;
+	color:#FFFFFF;
 	text-decoration:none;
 	text-transform:uppercase; 
 }
@@ -56,9 +56,9 @@ input.search-field {
 	vertical-align:middle;
 	background-color:#293449;
 	border:0px;
-	color:white;
+	color:#FFFFFF;
 	font-size:17px;
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 }
 .search .search-field:before{
     background-image: url("../img/sprite.png");
@@ -77,8 +77,8 @@ input.search-field:hover{
 	background-color:#212a3a;
 }
 input.search-field:focus{
-	background-color:white;
-	color:black;
+	background-color:#FFFFFF;
+	color:#000000;
 }
 .main-header {
 	background-color:#f1f5f7;
@@ -107,9 +107,10 @@ input.search-field:focus{
 }
 .bookmarks-link, .cart-link, .place-order {
 	display:inline-block;
-	color:white;
+	color:#FFFFFF;
 	font-size:17px;
 	text-decoration:none;
+	vertical-align:baseline;
 }
 .bookmarks-link:active, .cart-link:active, .place-order:active {
 	opacity:0.6;
@@ -184,7 +185,7 @@ input.search-field:focus{
 }
 .sign-in, .sign-up {
 	float:left;
-	background-color:white;
+	background-color:#FFFFFF;
 	font-size:21px;
 	min-height:31px;
 	padding-top:10px;
@@ -197,10 +198,11 @@ input.search-field:focus{
 	float:right;
 	display:inline-block;
 	padding-top:15px;
+	vertical-align:baseline;
 }
 .user-block a{
 	text-decoration:none;
-	color:black;
+	color:#000000;
 }
 .user-block a:hover{
 	color:#ee3643;
@@ -214,13 +216,13 @@ input.search-field:focus{
 	width:253px;
 	padding-left:47px;
 	padding-top:10px;
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:21px;
-	background-color:white;
+	background-color:#FFFFFF;
 	vertical-align:middle;
 	margin-bottom:5px;
 	text-decoration:none;
-	color:black;
+	color:#000000;
 }
 .user-name:hover .sprite-ico-user{
 	background-position: -10px -413px;
@@ -235,7 +237,7 @@ input.search-field:focus{
 	background-position: -10px -188px;
 }
 .user-block .account{
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:16px;
 	line-height:18px;
 	color:#32425c;
@@ -250,7 +252,7 @@ input.search-field:focus{
 	color:#32425c;
 }
 .user-name:after{
-	content:'';
+	content:"";
 	width:4px;
 	height:4px;
 	border-radius:50%;
@@ -270,11 +272,11 @@ input.search-field:focus{
 	list-style:none;
 }
 .breadcrumbs a{
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:13px;
 	text-transform:uppercase;
 	text-decoration:none;
-	color:black;
+	color:#000000;
 }
 .breadcrumbs .main {
 	display:block;
@@ -285,7 +287,7 @@ input.search-field:focus{
 	background-repeat:no-repeat;
 }
 .breadcrumbs .root:before{
-	content:'';
+	content:"";
 	display:inline-block;
 	width:7px;
 	height:7px;
@@ -293,6 +295,7 @@ input.search-field:focus{
 	border-right:1px solid #c1c6ce;
 	transform:rotate(45deg);
 	margin:0 17px;
+	vertical-align: baseline;
 }
 .sign-in {
 	text-align:right;
@@ -315,7 +318,7 @@ input.search-field:focus{
 	width:150px;
 }
 .clearfix:after{
-	content:'';
+	content:"";
 	display:table;
 	clear:both;
 }
@@ -326,10 +329,11 @@ input.search-field:focus{
 }
 .article-item{
 	float:left;
-	width
+	vertical-align:baseline;
 }
 .producer-filter{
 	display:inline-block;
+	vertical-align:baseline;
 }
 nav.main-nav{
 	width:940px;
@@ -339,6 +343,7 @@ nav.main-nav{
 }
 .main-nav.container li{
 	display:inline-block;
+	vertical-align:baseline;
 }
 .main-nav.container a{
 	display:inline-block;
@@ -347,7 +352,7 @@ nav.main-nav{
 	line-height:54px;
 	padding:0 28px;
 	padding-top:1px;
-	color:white;
+	color:#FFFFFF;
 	text-decoration:none;
 }
 .main-nav.container li:hover{
@@ -364,7 +369,7 @@ nav.main-nav{
 	padding:0px;
 	margin:0px;
 	background-color:#32425c;
-	color:white;
+	color:#FFFFFF;
 	font-size:17px;
 }
 .special-offers{
@@ -409,12 +414,12 @@ nav.main-nav{
 .offer-title{
 	font-size:24px;
 	text-decoration:bold;
-	color:white;
+	color:#FFFFFF;
 }
 .offer-btn{
 	display:block;
 	background-color:rgba(0,0,0,0.1);
-	color:white;
+	color:#FFFFFF;
 	text-decoration:none;
 	font-size:14px;
 	line-height:18px;
@@ -458,7 +463,7 @@ nav.main-nav{
 	padding-right:24px;
 	background-color:#261c19;
 	background-image:url("../img/slider-sprite.jpg");
-	color:white;
+	color:#FFFFFF;
 }
 .special-offers .offers-slider.first {
 	background-position:0 0;
@@ -474,7 +479,7 @@ nav.main-nav{
 	font-weight:bold;
 }
 .slider-sub-header{
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:18px;
 	line-height:24px;
 	padding-top:2px;
@@ -501,16 +506,31 @@ nav.main-nav{
 .switchers{
 	margin-bottom:58px;
 }
+button.switcher{
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 0px;
+	padding: 0;
+	border: 6px solid #FFFFFF;
+	margin-right: 5px;
+	vertical-align:baseline;
+}
+button.switcher.active{
+	background: red none repeat scroll 0% 0%;
+	border-width: 2px;
+	padding: 4px;
+}
 .btn{
 	display:inline-block;
 	line-height:38px;
 	font-size:14px;
 	padding:0 48px;
-	color:white;
+	color:#FFFFFF;
 	background-color:#ee3643;
 	border-radius:2px;
 	text-decoration:none;
 	text-transform:uppercase;
+	vertical-align:baseline;
 }
 .btn:hover{
 	background-color:#ca2c37;
@@ -521,8 +541,8 @@ nav.main-nav{
 .slider-switcher{
 	display:inline-block;
 	float:right;
-	margin-right:270px;
-	margin-top:10px;
+	margin-right:267px;
+	margin-top:3px;
 }
 input.switcher{
 	margin-left:4px;
@@ -572,6 +592,7 @@ article.item:hover .popular-item-hover{
 	width:100%;
 	margin-bottom:6px;
 	text-align:center;
+	vertical-align:baseline;
 }
 .image img{
 	vertical-align:middle;
@@ -579,7 +600,7 @@ article.item:hover .popular-item-hover{
 .popular-item-hover{
 	position:absolute;
 	display:none;
-	background-color:white;
+	background-color:#FFFFFF;
 	top:0;
 	left:0;
 	width:100%;
@@ -587,6 +608,7 @@ article.item:hover .popular-item-hover{
 	line-height:0px;
 	padding:37px 0;
 	margin:0;
+	vertical-align:baseline;
 }
 .popular-item-hover:first-child{
 	display:block;
@@ -599,7 +621,7 @@ article.item:hover .popular-item-hover{
 	border:3px solid #63a63e;
 	border-radius:3px;
 	margin-bottom:10px;
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:14px;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -609,7 +631,7 @@ article.item:hover .popular-item-hover{
 	background-color:#63a63e;
 	border-bottom:none;
 	box-shadow:0 3px 0 0 #367315;
-	color:white;
+	color:#FFFFFF;
 }
 .popular-item-hover .buy-btn:hover{
 	background-color:#5fbb2d;
@@ -632,7 +654,7 @@ article.item:hover .popular-item-hover{
 }
 .item .name{
 	text-align:center;
-	font-family:"PT Sans","Arial", san-serif;
+	font-family:"PT Sans","Arial", sans-serif;
 	font-size:18px;
 	line-height:20px;
 	font-weight:bold;
@@ -640,7 +662,7 @@ article.item:hover .popular-item-hover{
 }
 .item .old-price{
 	text-align:center;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:17px;
 	line-height:18px;
 	font-weight:bold;
@@ -651,16 +673,20 @@ article.item:hover .popular-item-hover{
 .item .new-price{
 	display:inline-block;
 	position:relative;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:17px;
 	font-weight:bold;
 	background-color:#ee3643;
-	color:white;
+	color:#FFFFFF;
 	line-height:38px;
 	margin-left:42px;
 	padding-right:20px;
 	padding-left:36px;
 	border-radius:3px;
+	vertical-align:baseline;
+}
+.new-price.no-old-price{
+	margin-top: 28px;
 }
 .new-price-corner{
 	display:inline-block;
@@ -672,10 +698,9 @@ article.item:hover .popular-item-hover{
 	right:-12px;
 	top:6px;
 	border-radius:2px;
+	vertical-align:baseline;
 }
-.item.new .name{
-	margin-bottom:42px;
-}
+
 .all-articles article.item:nth-child(3n){
 	margin-right:0px;
 }
@@ -690,7 +715,7 @@ h2.about-header{
 	margin-bottom:30px;
 }
 .about-articles .about-text{
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:13px;
 }
 .popular-offers .item{
@@ -781,7 +806,7 @@ h2.about-header{
 	margin-bottom:66px;
 }
 .services .definition{
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 }
 ul.services-menu{
 	position:relative;
@@ -791,7 +816,7 @@ ul.services-menu{
 	list-style:none;
 }
 .services-menu:after{
-	content:'';
+	content:"";
 	width:10px;
 	height:272px;
 	background-image:url("../img/shadow.png");
@@ -807,13 +832,14 @@ ul.services-menu{
 }
 .services-menu li a{
 	display:inline-block;
-	font-family:"Cuprum", "Arial", san-serif;
+	vertical-align:baseline;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-weight:bold;
 	font-size:21px;
 	line-height:59px;
 	vertical-align:middle;
 	text-decoration:none;
-	color:white;
+	color:#FFFFFF;
 	background-color:#32425c;
 	width:219px;
 	padding-left:21px;
@@ -824,14 +850,14 @@ ul.services-menu{
 	background-color:#293449;
 }
 .services-menu li a:active{
-	background-color:white;
+	background-color:#FFFFFF;
 	color:#32425c;
-	border-color:white;
+	border-color:#FFFFFF;
 }
 .services-menu li a.active-service{
-	background-color:white;
+	background-color:#FFFFFF;
 	color:#32425c;
-	border-color:white;
+	border-color:#FFFFFF;
 }
 .services-info{
 	float:left;
@@ -842,7 +868,7 @@ ul.services-menu{
 	background-repeat:no-repeat;
 }
 .services-info .title{
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:36px;
 	line-height:24px;
 	padding:0;
@@ -867,7 +893,8 @@ ul.services-menu{
 }
 p.description {
 	display:inline-block;
-	font-family:"PT Sans", "Arial", san-serif;	
+	font-family:"PT Sans", "Arial", sans-serif;	
+	vertical-align:baseline;
 }
 .delivery .description{
 	width:280px;
@@ -893,18 +920,19 @@ p.description {
 .site-information p{
 	display:inline-block;
 	width:540px;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:13px;
 	font-weight:normal;
 	line-height:24px;
 	margin-top:-1px;
 	margin-bottom:25px;
+	vertical-align:baseline;
 }
 .site-information ul{
 	list-style-image:url("../img/information-list-type.gif");
 	line-height:40px;
 	font-size:18px;
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	vertical-align:middle;
 	margin-top:-15px;
 	margin-left:-5px;
@@ -924,7 +952,7 @@ p.description {
 }
 .help-yourself {
 	width:180px;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	margin-bottom:30px;
 }
 .pop-up{
@@ -947,8 +975,8 @@ footer .site-name{
 .first-column .address{
 	float:left;
 	font-size:18px;
-	font-family:"Cuprum", "Arial", san-serif;
-	color:white;
+	font-family:"Cuprum", "Arial", sans-serif;
+	color:#FFFFFF;
 	margin-top:30px;
 }
 .menu-top{
@@ -957,7 +985,7 @@ footer .site-name{
 .menu-top li{
 	float:left;
 	width:121px;
-	color:white;
+	color:#FFFFFF;
 	margin:0px;
 	list-style:none;
 }
@@ -965,9 +993,9 @@ footer .site-name{
 	width:0;
 }
 .menu-top a{
-	color:white;
+	color:#FFFFFF;
 	text-decoration:none;
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:18px;
 }
 .menu-top a:hover{
@@ -992,7 +1020,7 @@ footer .site-name{
 	margin-left:22px;
 }
 .menu-bottom a{
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:18px;
 	color:#ffd180;
 	text-decoration:none;
@@ -1015,7 +1043,7 @@ footer .site-name{
 	float:left;
 	width:320px;
 	margin-right:70px;
-	color:white;
+	color:#FFFFFF;
 	font-size:16px;
 	line-height:20px;
 }
@@ -1068,15 +1096,15 @@ ul.social-links{
 	margin-right:10px;
 }
 .developer-info{
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	float:left;
 	margin-right:50px;
-	color:white;
+	color:#FFFFFF;
 	font-size:16px;
 	line-height:18px;
 }
 .developer-info a{
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	color:#ffd180;
 	font-size:16px;
 	line-height:18px;
@@ -1101,7 +1129,7 @@ form.filter{
 	display:inline-block;
 	vertical-align:middle;
 	width:203px;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:13px;
 	line-height:36px;
 	padding-left:17px;
@@ -1109,7 +1137,7 @@ form.filter{
 	background-color:#f7f3ec;
 }
 .price-title{
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:17px;
 	line-height:30px;
 	font-weight:bold;
@@ -1133,6 +1161,7 @@ form.filter{
 	border:7px solid white;
 	border-radius:50%;
 	box-shadow:0 2px 0 0 #ababab;
+	vertical-align:baseline;
 }
 .min-toggle{
 	top:50%;
@@ -1154,9 +1183,11 @@ form.filter{
 	left:50%;
 	margin-left:-90px;
 	margin-top:-1px;
+	vertical-align:baseline;
 }
 .scale .bar{
 	display:inline-block;
+	vertical-align:baseline;
 	position:absolute;
 	height:2px;
 	width:160px;
@@ -1202,7 +1233,7 @@ div.filter{
 	padding-top:16px;
 }
 .filter .title{
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:17px;
 	line-height:30px;
 	font-weight:bold;
@@ -1211,6 +1242,7 @@ div.filter{
 .producer-filter{
 	display:inline-block;
 	margin-bottom:5px;
+	vertical-align:baseline;
 }
 .filter-unit{
 	margin-top:14px;
@@ -1221,18 +1253,19 @@ div.filter{
 }
 .filter label{
 	display:inline-block;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:15px;
 	line-height:20px;
 	font-weight:normal;
 	text-transform:uppercase;
+	vertical-align:baseline;
 }
 .all-articles-header{
 	margin-bottom:18px;
 }
 .all-articles-header .sorting{
 	float:left;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:13px;
 	line-height:39px;
 	font-weight:normal;
@@ -1242,10 +1275,10 @@ div.filter{
 }
 .all-articles-header .sort-type{
 	float:left;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	line-height:18px;
 	font-size:13px;
-	color:black;
+	color:#000000;
 	opacity:0.3;
 	margin:0 35px;
 	margin-top:9px;
@@ -1272,13 +1305,14 @@ a.apply-filter{
 	padding-left:38px;
 	padding-right:38px;
 	text-decoration:none;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	line-height:18px;
 	font-size:13px;
 	text-transform:uppercase;
-	color:black;
+	color:#000000;
 	border:1px solid #e5e5e5;
 	border-radius:3px;
+	vertical-align:baseline;
 }
 .pages{
 	padding-top:33px;
@@ -1286,19 +1320,20 @@ a.apply-filter{
 .pages a.page-number{
 	display:inline-block;
 	padding:6px 14px;
-	color:black;
+	color:#000000;
 	border:1px solid #e5e5e5;
 	border-radius:3px;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	font-size:13px;
 	text-decoration:none;
 	text-transform:uppercase;
 	margin-right:8px;
+	vertical-align:baseline;
 }
 .pages a.page-number.active, .pages a.page-number.active:hover, .pages a.page-number.active:active{
 	border-color:#ee3643;
 	background-color:#ee3643;
-	color:white;
+	color:#FFFFFF;
 }
 a.page-number.next-page{
 	padding-left: 30px;
@@ -1319,9 +1354,9 @@ a.page-number.next-page{
 	margin-left:-310px;
 	margin-top:-215px;
 	padding-top:43px;
-	background-color:white;
+	background-color:#FFFFFF;
 	text-align:center;
-	font-family:"Cuprum", "Arial", san-serif;
+	font-family:"Cuprum", "Arial", sans-serif;
 	font-size:18px;
 	border-top:7px solid #ee3643;
 	box-shadow:0 20px 40px 0 rgba(0,0,0,0.75);
@@ -1339,7 +1374,7 @@ a.page-number.next-page{
 .personal-info input{
 	width:202px;
 	padding-left:14px;
-	font-family:"PT Sans", "Arial", san-serif;
+	font-family:"PT Sans", "Arial", sans-serif;
 	line-height:34px;
 	font-size:13px;
 	color:#999999;
@@ -1392,10 +1427,11 @@ a.page-number.next-page{
 }
 .label-new{
 	position:relative;
+	overflow:hidden;
 }
 .label-new:before{
-	content:'new';
-	font-family:"PT Sans Narrow", "Arial", san-serif;
+	content:"new";
+	font-family:"PT Sans Narrow", "Arial", sans-serif;
 	font-size:16px;
 	position:absolute;
 	top:8px;
@@ -1405,8 +1441,9 @@ a.page-number.next-page{
 	vertical-align:middle;
 	text-align:cneter;
 	background-color:#ee3643;
-	color:white;
+	color:#FFFFFF;
 	transform:rotate(45deg);
+	z-index:1;
 }
 /*==================================================================================================================================*/
 .sprite {
